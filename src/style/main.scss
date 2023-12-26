@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+// variables
+$font-title: 44px;
+$font-large: 19px;
+$font-regular: 17px;
+$font-small: 14px;
+$spacing-small: 16px;
+$spacing-base: 24px;
+$spacing-large: 48px;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .navbar-logo{
+        font-size: $font-small;
+    }
+    ul{
+        display: flex;
+        li{
+            list-style-type: none;
+            padding: 0.8rem;
+            a{
+                text-decoration: none;
+                color: #474747;
+            }
+        }
+    }
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../assets/hero.jpg');
+    display: flex;
+    align-items: center;
+    padding: 0 200px;
+    p{
+        font-size: 1.2rem;
+        width: 600px;
+    }
+    .hero-content{
+        z-index: 99;
+        font-size: 1.8rem;
+        color: #ffffff;
+    }
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.25);
+}
+
+.button{
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+}
+
+.catalouge{
+    margin: 100px 200px;
+    h1{
+        font-size: $font-title;
+        margin-bottom: $spacing-base;
+    }
+    .catalouge-menu-bar{
+        ul{
+            display: flex;
+            margin-bottom: $spacing-base;
+            li{
+                list-style-type: none;
+                margin: 0 40px 0 0;
+                font-size: $font-large;
+                color: #8a8a8a;
+                cursor: pointer;
+                transition: 0.1s;
+            }
+            li:hover{
+                font-weight: 700;
+            }
+        }
+        .active{
+            font-weight: 700;
+            border-bottom: 2px solid #474747;
+        }
+    }
+    .catalouge-gallery{
+        display: flex;
+        gap: 100px;
+        .catalouge-item{
+            img{
+                width: 300px;
+                height: 300px;
+            }
+            p{
+                font-weight: 300;
+            }
+        }
+
+    }
+}
