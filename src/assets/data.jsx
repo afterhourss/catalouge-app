@@ -3,6 +3,7 @@ import img1 from './wood-chair.jpg'
 import img2 from './mahogany-table.jpg'
 import img3 from './alumunium-chair.jpg'
 import img4 from './cozy-lamp.jpg'
+import img5 from './steel-chair.jpg'
 
 
 export const catalougeList = [
@@ -38,5 +39,14 @@ export const catalougeList = [
         url: img4,
         price: 1900000,
         alt: 'an image of lamp'
+    },
+    {
+        id: 5,
+        name: 'steel chair',
+        type: 'chair',
+        desc: 'robust and long term durability',
+        url: img5,
+        price: 1100000,
+        alt: 'an image of chair'
     },
 ]
