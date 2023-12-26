@@ -30,15 +30,14 @@ function Catalouge() {
         </ul>
       </div>
         <div className="catalouge-gallery">
-          
           {list.map(item => {
             return <div className="catalouge-item">
               <img key={item.id} src={item.url} alt="" />
               <h3>{item.name.charAt(0).toUpperCase() + item.name.slice(1)}</h3>
               <p>{item.desc}</p>
+              <p>{'Rp' + item.price}</p>
             </div>
           })}
-          
         </div>
     </div>
   )
