@@ -5,11 +5,11 @@ function Hero() {
   return (
     <div className='hero'>
         <div className='hero-content'>
-            <h1>Discover your environtment</h1>
+            <h1>Discover Your Own Best Environtment</h1>
             <p>Take a look for our best home catalouge and suit your needs to your own home aesthetics</p>
-            <Button text='Log in' colorBtn={'#000'} bgBtn={'#fff'}/>
-            <Button text='Catalouge' colorBtn={'#fff'} borderBtn={true} bgBtn={'transparent'}/>
+            <Button text='Catalouge' colorBtn={'#fff'} bgBtn={'#000'}/>
         </div>
+        <div className='hero-image'></div>
     </div>
   )
 }

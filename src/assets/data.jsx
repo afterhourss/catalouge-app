@@ -4,6 +4,9 @@ import img2 from './mahogany-table.jpg'
 import img3 from './alumunium-chair.jpg'
 import img4 from './cozy-lamp.jpg'
 import img5 from './steel-chair.jpg'
+import img6 from './item6.jpg'
+import img7 from './item7.jpg'
+import img8 from './item8.jpg'
 
 
 export const catalougeList = [
@@ -46,7 +49,34 @@ export const catalougeList = [
         type: 'chair',
         desc: 'robust and long term durability',
         url: img5,
-        price: 1100000,
+        price: 700000,
         alt: 'an image of chair'
+    },
+    {
+        id: 6,
+        name: 'Round lamp',
+        type: 'lamp',
+        desc: 'round like a planets',
+        url: img6,
+        price: 2100000,
+        alt: 'an image of chair'
+    },
+    {
+        id: 7,
+        name: 'Brown table',
+        type: 'table',
+        desc: 'good looking table',
+        url: img7,
+        price: 3300000,
+        alt: 'an image of table'
+    },
+    {
+        id: 8,
+        name: 'Less brown table',
+        type: 'table',
+        desc: 'this is not brown',
+        url: img8,
+        price: 1900000,
+        alt: 'an image of table'
     },
 ]
